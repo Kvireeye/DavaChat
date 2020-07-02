@@ -127,7 +127,7 @@
         app:layout_constraintStart_toStartOf="@id/prenom"
         app:layout_constraintTop_toBottomOf="@id/prenom"
         android:hint="@string/num_tel"
-        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         />
 
     <EditText
@@ -139,7 +139,8 @@
         android:inputType="textPassword"
         android:layout_marginTop="25dip"
         app:layout_constraintStart_toStartOf="@id/num_tel"
-        app:layout_constraintTop_toBottomOf="@id/num_tel"/>
+        app:layout_constraintTop_toBottomOf="@id/num_tel"
+        android:textColorHint="@color/black"/>
 
     <EditText
         android:id="@+id/mdp_2"
@@ -150,7 +151,8 @@
         android:inputType="textPassword"
         android:layout_marginTop="15dip"
         app:layout_constraintStart_toStartOf="@id/mdp_1"
-        app:layout_constraintTop_toBottomOf="@id/mdp_1"/>
+        app:layout_constraintTop_toBottomOf="@id/mdp_1"
+        android:textColorHint="@color/black"/>
 
     <Button
         android:id="@+id/button"

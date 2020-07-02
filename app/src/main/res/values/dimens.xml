@@ -18,6 +18,8 @@
     <dimen name="marge_bouton_quitter">20dip</dimen>
     <dimen name="padding_bouton_connexion">10dip</dimen>
 
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
 
 
 </resources>

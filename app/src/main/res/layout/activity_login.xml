@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="240sp"
+        android:background="@drawable/logo_gipcip_p"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="362dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/enter_username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="358dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/login" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_here_to_register"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/register"/>
+
+</LinearLayout>
