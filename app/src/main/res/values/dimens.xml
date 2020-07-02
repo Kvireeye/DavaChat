@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_large_margin">20dip</dimen>
+    <dimen name="default_margin">10dip</dimen>
+    <dimen name="default_title_size">20sp</dimen>
+    <dimen name="default_text_size">13sp</dimen>
+    <dimen name="default_text_size_mini">8sp</dimen>
+    <dimen name="margin_bottom">20dip</dimen>
+
+
+    // Dimen Bouton accueil
+    <dimen name="radius_bouton_acceuil">15dip</dimen>
+    <dimen name="text_size_bouton_acceuil">20sp</dimen>
+    <dimen name="largeur_bouton">20dip</dimen>
+    <dimen name="marge_bouton">20dip</dimen>
+
+    <dimen name="largeur_bouton_quitter">20dip</dimen>
+    <dimen name="marge_bouton_quitter">20dip</dimen>
+    <dimen name="padding_bouton_connexion">10dip</dimen>
+
+
+
+</resources>

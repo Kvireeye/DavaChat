@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#034EDA</color>
+    <color name="colorPrimaryDark">#034EDA</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    //Palette de couleurs
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#034EDA</color>
+    <color name="red">#C50909</color>
+    <color name="orange">#FF5A14</color>
+    <color name="black">#000000</color>
+    <color name="grey">#858484</color>
+    <color name="grey_light">#AEADAD</color>
+</resources>

@@ -1,0 +1,246 @@
+{
+  "project_info": {
+    "project_number": "101521661481",
+    "firebase_url": "https://davacom-1fbce.firebaseio.com",
+    "project_id": "davacom-1fbce",
+    "storage_bucket": "davacom-1fbce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101521661481:android:49a75d51e801b899efc638",
+        "android_client_info": {
+          "package_name": "com.example.chatparty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4ay3fxcD-JtRdw6Ld0d-sHrmeVf112o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101521661481:android:8adc02a6cf4c6aedefc638",
+        "android_client_info": {
+          "package_name": "com.example.davachat5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101521661481-ped9e0sqn5sttpmtfn1ko368hcs0ck1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.davachat5",
+            "certificate_hash": "f068157e1eace3a2d25fff5ae8c9483e210ddb84"
+          }
+        },
+        {
+          "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4ay3fxcD-JtRdw6Ld0d-sHrmeVf112o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101521661481:android:2e279c81b6bca174efc638",
+        "android_client_info": {
+          "package_name": "com.example.davacom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4ay3fxcD-JtRdw6Ld0d-sHrmeVf112o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101521661481:android:bf6e2e569968702eefc638",
+        "android_client_info": {
+          "package_name": "com.example.davacom3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101521661481-nqs4s9g5p4b7h7il1nptrbp38v1ptuqj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.davacom3",
+            "certificate_hash": "f068157e1eace3a2d25fff5ae8c9483e210ddb84"
+          }
+        },
+        {
+          "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4ay3fxcD-JtRdw6Ld0d-sHrmeVf112o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101521661481:android:7db974f87a22c197efc638",
+        "android_client_info": {
+          "package_name": "com.example.davacom4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4ay3fxcD-JtRdw6Ld0d-sHrmeVf112o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101521661481:android:fe081d0d3b83f479efc638",
+        "android_client_info": {
+          "package_name": "com.example.davacomp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101521661481-0a4s52ovpr7n1l80et55kuri8n8prc6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.davacomp",
+            "certificate_hash": "f068157e1eace3a2d25fff5ae8c9483e210ddb84"
+          }
+        },
+        {
+          "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4ay3fxcD-JtRdw6Ld0d-sHrmeVf112o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101521661481:android:59302c89685a9e7fefc638",
+        "android_client_info": {
+          "package_name": "com.example.opcchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101521661481-9gkciomts0ulr0ol1k8bodammgvmou0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.opcchat",
+            "certificate_hash": "f068157e1eace3a2d25fff5ae8c9483e210ddb84"
+          }
+        },
+        {
+          "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq4ay3fxcD-JtRdw6Ld0d-sHrmeVf112o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101521661481-r6ss0d8tfp49q966ee2suas0hdhcmh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

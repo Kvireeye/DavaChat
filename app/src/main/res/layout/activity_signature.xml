@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signature">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textSignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signature"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/padSignature"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dip"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dip"
+            app:layout_constraintBottom_toTopOf="@+id/btn_effacer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSignature">
+
+
+            <com.example.davachat5.PaintSign
+                android:id="@+id/PainSign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_light"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_effacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/effacer"
+            android:layout_marginBottom="30dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_valider"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            />
+
+        <Button
+            android:id="@+id/btn_valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valider"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_effacer"
+            app:layout_constraintEnd_toStartOf="@+id/btn_signez"
+            app:layout_constraintStart_toEndOf="@+id/btn_effacer"
+            app:layout_constraintTop_toTopOf="@+id/btn_effacer"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_signez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signez"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_valider"
+            app:layout_constraintTop_toTopOf="@+id/btn_valider" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

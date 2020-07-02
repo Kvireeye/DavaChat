@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/key_inscription"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/key_24dp"
+        android:contentDescription="@string/cle_bleu"/>
+
+    <TextView
+        android:id="@+id/titre_inscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inscription"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/key_inscription" />
+
+    <TextView
+        android:id="@+id/civilite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dip"
+        android:layout_marginTop="25dip"
+        android:text="@string/civilite"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titre_inscription" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_civilite_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/madame"
+        app:layout_constraintBottom_toBottomOf="@+id/civilite"
+        app:layout_constraintStart_toEndOf="@+id/civilite"
+        app:layout_goneMarginStart="20dip" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_civilite_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/monsieur"
+        app:layout_constraintBottom_toBottomOf="@+id/chip_civilite_f"
+        app:layout_constraintStart_toEndOf="@+id/chip_civilite_f" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nom_de_naissance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginStart="20dip"
+        android:layout_marginEnd="20dip"
+        app:layout_constraintStart_toStartOf="@id/civilite"
+        app:layout_constraintTop_toBottomOf="@id/civilite"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nom_de_naissance"
+            android:textColorHint="@color/black"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nom_d_usage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginStart="20dip"
+        android:layout_marginEnd="20dip"
+        app:layout_constraintStart_toStartOf="@id/nom_de_naissance"
+        app:layout_constraintTop_toBottomOf="@id/nom_de_naissance">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nom_d_usage"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginStart="20dip"
+        android:layout_marginEnd="20dip"
+        app:layout_constraintStart_toStartOf="@id/nom_d_usage"
+        app:layout_constraintTop_toBottomOf="@id/nom_d_usage">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prenom"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/num_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginTop="15dip"
+        app:layout_constraintStart_toStartOf="@id/prenom"
+        app:layout_constraintTop_toBottomOf="@id/prenom"
+        android:hint="@string/num_tel"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/mdp_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/mot_de_passe"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="25dip"
+        app:layout_constraintStart_toStartOf="@id/num_tel"
+        app:layout_constraintTop_toBottomOf="@id/num_tel"/>
+
+    <EditText
+        android:id="@+id/mdp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/mot_de_passe_confirmer"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dip"
+        app:layout_constraintStart_toStartOf="@id/mdp_1"
+        app:layout_constraintTop_toBottomOf="@id/mdp_1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valider"
+        android:background="@drawable/bouton_orange"
+        android:layout_marginBottom="15dip"
+        android:layout_marginEnd="15dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

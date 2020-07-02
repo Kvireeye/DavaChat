@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_acceuil_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_acceuil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Acceuil"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/white"
+            android:gravity="top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/logo_du_fcip_gip"
+                android:src="@drawable/logo_gipfcip_v"
+                android:visibility="visible"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
+            android:gravity="top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+
+            >
+
+            <Button
+                android:id="@+id/portail_bouton_connexion"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marge_bouton"
+                android:background="@drawable/bouton_bleu"
+                android:padding="@dimen/largeur_bouton"
+                android:text="@string/connexion"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_bouton_acceuil"
+
+                />
+
+            <Button
+                android:id="@+id/portail_bouton_inscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inscription"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_bouton_acceuil"
+                android:textAlignment="center"
+                android:background="@drawable/bouton_orange"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="@dimen/marge_bouton"
+                android:padding="@dimen/largeur_bouton"
+                />
+
+            <Button
+                android:id="@+id/portail_bouton_quitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quitter"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_bouton_acceuil"
+                android:textAlignment="center"
+                android:background="@drawable/bouton_rouge"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginVertical="@dimen/largeur_bouton"
+                android:layout_marginHorizontal="100dip"
+                android:padding="@dimen/padding_bouton_connexion"
+                />
+
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
