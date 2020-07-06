@@ -1,5 +1,5 @@
 package com.example.davachat5;
-
+/*
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,3 +12,6 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
     }
 }
+
+
+ */

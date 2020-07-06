@@ -12,15 +12,15 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+/*
 import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
-
+/*
 import java.util.HashMap;
 import java.util.Map;
-
+/*
 public class Chat extends AppCompatActivity {
     LinearLayout layout;
     RelativeLayout layout_2;
@@ -117,3 +117,5 @@ public class Chat extends AppCompatActivity {
         scrollView.fullScroll(View.FOCUS_DOWN);
     }
 }
+
+ */

@@ -1,5 +1,5 @@
 package com.example.davachat5;
-
+/*
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -97,6 +97,8 @@ public class Acceuil extends Fondation {
 
 //FIN CONNEXION
  }
+
+ */
 
 
 
