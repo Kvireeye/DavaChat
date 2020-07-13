@@ -1,6 +1,8 @@
 package com.example.davachat5;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -24,7 +26,35 @@ public class MainActivity extends Fondation{
         LinearLayout btn_chat = findViewById(R.id.acceuil_bouton_chat);
         LinearLayout btn_qrc = findViewById(R.id.acceuil_bouton_qrc);
         LinearLayout btn_signature = findViewById(R.id.acceuil_bouton_signature);
+        
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_principal, menu);
+        return true;
+        //ajoute les entrées de menu_principal à l'ActionBar
+
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_chat:
+                /* chat code */
+                return true;
+            case R.id.action_document:
+                /* document code */
+                return true;
+            case R.id.action_option:
+                /* option code */
+                return true;
+            case R.id.action_quitter:
+                /* quiter code */
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 /*

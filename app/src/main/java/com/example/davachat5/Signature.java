@@ -2,6 +2,7 @@ package com.example.davachat5;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -15,15 +16,16 @@ import java.util.UUID;
 
 
 public class Signature extends AppCompatActivity implements View.OnClickListener {
+
     PaintSign paintSign;
     Button validerSign, effacer, signer;
-
-
+    Bitmap bitmapSign=paintSign.bitmapSign;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signature);
+
 
         paintSign = findViewById(R.id.PainSign);
         validerSign = findViewById(R.id.btn_valider);
@@ -45,8 +47,9 @@ public class Signature extends AppCompatActivity implements View.OnClickListener
 
         }
         if(v == effacer){
-            Bitmap bitmapSign = PaintSign.getBitmapSign();
-            bitmapSign.eraseColor(Color.TRANSPARENT);
+
+            //bitmapSign.eraseColor(Color.TRANSPARENT);
+            PaintSign.clearCanvas(bitmapSign);
 
 
         }

@@ -1,9 +1,19 @@
 <resources>
     <string name="app_name">DavaChat5</string>
     <string name="logo_du_fcip_gip">logo du fcip-gip</string>
+
+    <string name="DashBoard">Tableau de bord</string>
+
     <string name="connexion">Connexion</string>
     <string name="inscription">Inscription</string>
     <string name="quitter">Quitter</string>
+    <string name="profil">Profil</string>
+    <string name="deconnexion">Deconnexion</string>
+    <string name="qrcode">QRCode</string>
+    <string name="signature">Signature</string>
+    <string name="effacer">Effacer</string>
+
+
     <string name="civilite">Civilité : </string>
     <string name="monsieur">Monsieur </string>
     <string name="madame">Madame </string>
@@ -21,14 +31,9 @@
     <string name="error_no_internet">Absence de connexion internet</string>
     <string name="error_unknown_error">Erreur inconnnue</string>
     <string name="error_authentication_canceled">"Echec de l'authentification "</string>
+    <string name="document">Document</string>
+    <string name="options">Options</string>
+    <string name="chat">Salon de discussion</string>
 
-    <string name="DashBoard">Tableau de bord</string>
-    <string name="profil">Profil</string>
-    <string name="deconnexion">Deconnexion</string>
-    <string name="qrcode">QRCode</string>
-    <string name="signature">Signature</string>
-    <string name="effacer">Effacer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

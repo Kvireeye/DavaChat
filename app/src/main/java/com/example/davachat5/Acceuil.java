@@ -1,5 +1,5 @@
 package com.example.davachat5;
-/*
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +21,7 @@ import java.util.Objects;
 
 
 public class Acceuil extends Fondation {
-
+/*
     private static final int RC_SIGN_IN = 119;
     private static final int SIGN_OUT_TASK = 10;
 
@@ -95,10 +95,10 @@ public class Acceuil extends Fondation {
             }
             // [END auth_fui_create_intent]
 
-//FIN CONNEXION
+//FIN CONNEXION*/
  }
 
- */
+
 
 
 

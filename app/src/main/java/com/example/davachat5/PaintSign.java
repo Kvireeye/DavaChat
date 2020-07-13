@@ -18,6 +18,7 @@ public class PaintSign extends View {
     public static Canvas interfaceSign;
     public static Paint pinceau, canvasPaint;
 
+
     public PaintSign(Context c) {
         super(c);
 
@@ -75,7 +76,7 @@ public class PaintSign extends View {
         return true;
     }
 
-    public static void clearCanvas() {
+    public static void clearCanvas(Bitmap bitmapSign) {
     bitmapSign.eraseColor(Color.TRANSPARENT);
 
     }
