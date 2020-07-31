@@ -35,6 +35,7 @@ public class PaintSign extends View {
         pinceau.setStrokeCap(Paint.Cap.ROUND);
         pinceau.setStrokeWidth(8f);
         pinceau.setDither(true);
+        pinceau.setAntiAlias(true);
         canvasPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
 
     }
@@ -46,12 +47,15 @@ public class PaintSign extends View {
         interfaceSign.drawPath(tracer, pinceau);
     }
 
+
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         bitmapSign = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         interfaceSign = new Canvas(bitmapSign);
     }
+
+
 
 
     @Override
@@ -76,14 +80,16 @@ public class PaintSign extends View {
         return true;
     }
 
-    public static void clearCanvas(Bitmap bitmapSign) {
-    bitmapSign.eraseColor(Color.TRANSPARENT);
-
+    public static void clearCanvas() {
+   bitmapSign.eraseColor(Color.TRANSPARENT);
+        System.gc();
     }
+
 
     public static Bitmap getBitmapSign(){
         return bitmapSign;
     }
+
 
 
     }

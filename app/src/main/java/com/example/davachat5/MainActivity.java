@@ -26,7 +26,7 @@ public class MainActivity extends Fondation{
         LinearLayout btn_chat = findViewById(R.id.acceuil_bouton_chat);
         LinearLayout btn_qrc = findViewById(R.id.acceuil_bouton_qrc);
         LinearLayout btn_signature = findViewById(R.id.acceuil_bouton_signature);
-        
+
 
     }
 

@@ -1,8 +1,8 @@
 package com.example.davachat5;
 
-import android.app.Activity;
+
 import android.app.AlertDialog;
-import android.content.Context;
+
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -12,32 +12,39 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+
+
 import java.util.UUID;
 
+import static com.example.davachat5.R.id.PainSign;
+import static com.example.davachat5.R.id.btn_valider;
 
-public class Signature extends AppCompatActivity implements View.OnClickListener {
 
-    PaintSign paintSign;
-    Button validerSign, effacer, signer;
-    Bitmap bitmapSign=paintSign.bitmapSign;
+public class Signature extends Fondation implements View.OnClickListener {
+
+    public PaintSign paintSign;
+    public Button validerSign, effacer, signer;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signature);
 
-
         paintSign = findViewById(R.id.PainSign);
-        validerSign = findViewById(R.id.btn_valider);
+        validerSign = findViewById(btn_valider);
         effacer = findViewById(R.id.btn_effacer);
         signer = findViewById(R.id.btn_signez);
-
 
         validerSign.setOnClickListener(this);
         effacer.setOnClickListener(this);
         signer.setOnClickListener(this);
 
     }
+
+
 
 
     @Override
@@ -47,9 +54,9 @@ public class Signature extends AppCompatActivity implements View.OnClickListener
 
         }
         if(v == effacer){
+            PaintSign.clearCanvas();
 
-            //bitmapSign.eraseColor(Color.TRANSPARENT);
-            PaintSign.clearCanvas(bitmapSign);
+
 
 
         }
