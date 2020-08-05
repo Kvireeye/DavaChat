@@ -1,5 +1,6 @@
 package com.example.davachat5;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,6 +28,14 @@ public class MainActivity extends Fondation{
         LinearLayout btn_qrc = findViewById(R.id.acceuil_bouton_qrc);
         LinearLayout btn_signature = findViewById(R.id.acceuil_bouton_signature);
 
+        btn_signature.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Signature.class);
+
+
+            }
+        });
 
     }
 
@@ -68,9 +77,13 @@ public class MainActivity extends Fondation{
         // [END auth_fui_signout]
     }
     */
-    public void onClickSignature(View view) {setContentView(R.layout.activity_signature);
+
+    public void onClickSignature(View view) {
+        setContentView(R.layout.activity_signature);
+
     }
 
     public void onClickPDF(View view) {setContentView(R.layout.activity_pdf_visio);
     }
+
 }

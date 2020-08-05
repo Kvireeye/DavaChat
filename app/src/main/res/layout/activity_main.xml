@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view_menu"/>
+
 
         <ScrollView
             android:layout_width="match_parent"
@@ -193,6 +198,9 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_marginHorizontal="40sp"
                     />
+
+
+
             </LinearLayout>
 
         </ScrollView>
