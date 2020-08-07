@@ -18,12 +18,6 @@ public class PaintSign extends View {
     public static Canvas interfaceSign;
     public static Paint pinceau, canvasPaint;
 
-
-    public PaintSign(Context c) {
-        super(c);
-
-    }
-
     public PaintSign(Context context, AttributeSet attrs) {
         super(context, attrs);
         tracer = new Path();
@@ -56,8 +50,6 @@ public class PaintSign extends View {
     }
 
 
-
-
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
@@ -67,21 +59,24 @@ public class PaintSign extends View {
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
                 tracer.moveTo(pointX,pointY);
+                invalidate();
                 break;
             case MotionEvent.ACTION_MOVE:
                 tracer.lineTo(pointX,pointY);
+                invalidate();
                 break;
             case MotionEvent.ACTION_UP:
                 interfaceSign.drawPath(tracer,pinceau);
                 tracer.reset();
+                invalidate();
                 break;
         }
-        invalidate();
         return true;
     }
 
     public static void clearCanvas() {
-   bitmapSign.eraseColor(Color.TRANSPARENT);
+        bitmapSign.eraseColor(Color.TRANSPARENT);
+        tracer.reset();
         System.gc();
     }
 
@@ -89,8 +84,6 @@ public class PaintSign extends View {
     public static Bitmap getBitmapSign(){
         return bitmapSign;
     }
-
-
 
     }
 

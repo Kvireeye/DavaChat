@@ -32,7 +32,7 @@ public class MainActivity extends Fondation{
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
+        getMenuInflater().inflate(R.menu.hamburger_menu, menu);
         return true;
         //ajoute les entrées de menu_principal à l'ActionBar
 
